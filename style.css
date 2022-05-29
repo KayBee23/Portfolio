@@ -1,0 +1,116 @@
+
+
+
+/* resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+
+
+/* containers */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* header */
+
+#header-home {
+  height: 100vh;
+  background: url(img/herobg.jpg) no-repeat center center/cover;
+  position: relative;
+}
+
+#header-home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+nav {
+  padding: 25px 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 30px;
+  font-size: 22px;
+  z-index: 100;
+}
+
+nav ul li a:hover{
+  border-bottom: 3px solid #e48c2d;
+}
+
+.header-hero {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform:translate(-50%,-50%);
+  z-index: 100;
+}
+
+.hero-card {
+  width: 600px;
+  height: 100vh;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #eee;
+  z-index: 100;
+}
+.hero-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+.hero-card-img {
+  height: 250px;
+  width: 250px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 0; 
+  position:absolute;
+  top: 20%;
+}
+
+.hero-card h1{
+  position: absolute;
+  top: 50%;
+}
