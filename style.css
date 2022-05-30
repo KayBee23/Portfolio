@@ -1,6 +1,4 @@
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 /* resets */
 * {
   padding: 0;
@@ -15,9 +13,10 @@ a {
   text-decoration: none;
   color: #eee;
 }
-
-
-
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
 /* containers */
 
 .container {
@@ -25,6 +24,16 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
+}
+/* Utilities */
+.section-title {
+  padding: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 /* header */
@@ -63,7 +72,7 @@ nav ul li {
   z-index: 100;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   border-bottom: 3px solid #e48c2d;
 }
 
@@ -71,7 +80,7 @@ nav ul li a:hover{
   position: absolute;
   top: 50%;
   left: 20%;
-  transform:translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
@@ -105,12 +114,71 @@ nav ul li a:hover{
   object-position: center;
   object-fit: cover;
   border-radius: 50%;
-  margin: 25px 0; 
-  position:absolute;
+  margin: 25px 0;
+  position: absolute;
   top: 20%;
 }
 
-.hero-card h1{
+.hero-card h1 {
   position: absolute;
   top: 50%;
 }
+
+/* About */
+
+section#about {
+  text-align: center;
+  background-color: #e4792d;
+  color: #eee;
+}
+
+.about-content {
+  width: 1000px;
+  margin: 0 auto;
+  height: 275px;
+  padding: 25px 10px 25px 10px;
+  text-align: left;
+}
+.about-content h3 {
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.about-content .lead {
+  font-size: 22px;
+}
+
+section#about-skill {
+  text-align: center;
+  background-color: #555;
+  color: #eee;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 50px 0;
+}
+
+.about-skills i{
+  font-size:40px;
+  margin-bottom: 10px;
+}
+
+.about-skills h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-skills ul li {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.about-skill-card {
+  background-color: #e4792d;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow:4px 4px 15px rgba(255,255,255,0.2)
+}
+
