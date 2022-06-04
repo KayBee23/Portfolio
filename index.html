@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <script
       src="https://kit.fontawesome.com/5c6f6d290d.js"
       crossorigin="anonymous"
@@ -17,10 +18,10 @@
       <div class="container">
         <nav id="navigation">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header-home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -38,6 +39,7 @@
           </div>
         </div>
       </div>
+    
     </header>
     <main>
       <section id="about">
@@ -56,6 +58,7 @@
       </section>
       <section id="about-skill">
         <div class="container">
+          
           <h2 class="section-title">Skills</h2>
           <div class="about-skills">
             <div class="about-skill-card">
@@ -73,7 +76,7 @@
             </div>
             <div class="about-skill-card">
               <i class="fas fa-camera"></i>
-              <h3>Photography/Visuals</h3>
+              <h3>Photography / Visuals</h3>
               <ul class="about-skill-list">
                 <li>Lightroom</li>
                 <li>Photoshop</li>
@@ -85,35 +88,41 @@
       </section>
       <section id="project">
         <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
+        <div class="projects">
           <div class="project project-1">
             <a href="https://compassionate-pasteur-ca35bd.netlify.app">
               <img src="img/Jsclock.png" alt="" class="project-img" />
+              <div class="project-info"><p>Clock made with Javascript</p></div>
             </a>
           </div>
           <div class="project project-2">
             <a href="https://awesome-ride-21fccc.netlify.app">
-              <img src="img/NewsGrid.png" alt="" class="project-img" />
+              <img src="img/NewsGrid.png" alt="" class="project-img"/>
+              <div class="project-info"><p>News website made with CSS Grid</p></div>
             </a>
           </div>
           <div class="project project-3">
             <a href="Projects/Edgeledger/index.html">
               <img src="img/EdgeLedger.png" alt="" class="project-img" />
+              <div class="project-info"><p>Financial website using CSS Flex</p></div>
             </a>
           </div>
           <div class="project project-4">
             <a href="Projects/flooble_project/index.html">
               <img src="img/Fooble.png" alt="" class="project-img" />
+              <div class="project-info"><p>Search website UI </p></div>
             </a>
           </div>
           <div class="project project-5">
             <a href="Projects/task list project/index.html">
               <img src="img/TaskList.png" alt="" class="project-img" />
+              <div class="project-info"><p>Javascript task list</p></div>
             </a>
           </div>
           <div class="project project-6">
             <a href="Projects/Pokedex/index.html">
               <img src="img/pokedex.png" alt="" class="project-img" />
+              <div class="project-info"><p>Pokedex using Pokéapi </p></div>
             </a>
           </div>
         </div>
@@ -129,6 +138,30 @@
           <div class="gallery-item w-3"><div class="gallery-img"><img class="img5" src="img/panorama.jpg" alt=""></div></div>
         </div>
       </section>
+      <section id="contact">
+          <h2 class="section-title">Contact</h2>
+          <form action="">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <textarea cols="30" rows="10"></textarea>
+            <button class="btn btn-primary">Send</button>
+          </form>
+      </section>
+      <footer id="footer">
+        <div class="container">
+        <p>Made by Benjamin Körmöczy | 2022</p>
+        <ul class="social-icons">
+          <li><a href="https://www.instagram.com/kaybee_shot/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://github.com/KayBee23"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://twitter.com/KayBee73193497"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/benjamin-k%C3%B6rm%C3%B6czy-362802234/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      </footer>
     </main>
     <script src="app.js"></script>
   </body>
