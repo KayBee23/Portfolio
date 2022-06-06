@@ -237,3 +237,22 @@ header {
 #mainfooter a:hover {
   text-shadow: 0 0 20px var(--light-color);
 }
+
+#go-back{
+  cursor: pointer;
+  position:fixed;
+  bottom: 10%;
+  left: 1%;
+  z-index: 100;
+  border: none;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 50%;
+  font-size: 1.5em;
+  background-color: rgb(59,185,155);
+  color: #222;
+}

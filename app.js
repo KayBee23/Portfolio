@@ -1,25 +1,20 @@
 const menuItems = document.querySelectorAll('#navigation ul li a');
 const nav = document.getElementById('navigation');
+const goBackBtn = document.getElementById('go-back');
 
 
-menuItems.forEach((menuItem) => {
-  if(menuItem.classList.contains('active')){
-    menuItem.style.borderBottom = '3px solid #e48c2d';
-  }
-})
 
 // nav scrolling bg change
 window.addEventListener('scroll',() => {
   let rect = window.scrollY + nav.getBoundingClientRect().top;
 if(rect >= 133){
   nav.style.backgroundColor = 'rgba(0,0,0,0.6)';
+  nav.style.padding= '15px 0';
 }else{
-  nav.style.backgroundColor = 'transparent'
+  nav.style.backgroundColor = 'transparent';
+  nav.style.padding= '25px 0';
 }
 })
-
-
-
 
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
