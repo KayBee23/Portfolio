@@ -141,15 +141,12 @@
       </section>
       <section id="contact">
           <h2 class="section-title">Contact</h2>
-          <form action="">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <textarea cols="30" rows="10"></textarea>
-            <button class="btn btn-primary">Send</button>
+          <form mehtod="POST" data-netlify="true" data-netlify-recaptcha="true">
+           <label for="name"><input type="text" name="name" placeholder="Name"></label>
+            <label for="email"><input type="email" id="email" name="email" placeholder="Email"></label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="btn btn-primary">Send</button>
           </form>
       </section>
       <footer id="footer">
