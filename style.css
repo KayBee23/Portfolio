@@ -417,6 +417,10 @@ border: 1px solid #e4792d;
 box-shadow: 0 0 15px #e4792d;
 }
 
+
+form div{
+  align-self: center;
+}
 /* Footer */
 
 #footer{
