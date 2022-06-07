@@ -506,9 +506,19 @@ form div{
   .about-content{
     width: 80%;
   }
+
+  form{
+    max-width:80%
+  }
 }
 
 @media (max-width:660px){
+
+  
+  .hero-card h1 {
+    font-size:22px;
+  }
+
   .about-skills{
     flex-direction: column;
     justify-content:center;
@@ -523,22 +533,17 @@ form div{
     display: flex;
     flex-direction: column;
   }
-
-  form{
-    width: 80%;
-  }
-
   .social-icons{
     display:flex
   }
 }
 
-@media (max-width:420px){
+@media (max-width:580px){
 
  #header-home{
    background-position:75%;
  }
-  nav ul li {
+  nav ul li{
     font-size: 16px;
     margin: 0 auto;
   }
